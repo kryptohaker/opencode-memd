@@ -1,0 +1,17 @@
+{
+  "name": "opencode-memd",
+  "version": "0.2.0",
+  "description": "Claude Code-style persistent memory for OpenCode — plain markdown, no vector DB",
+  "type": "module",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.18.30"
+  },
+  "scripts": {
+    "install-plugin": "bash install.sh",
+    "postinstall": "node postinstall.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22"
+  }
+}
