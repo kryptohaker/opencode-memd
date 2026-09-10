@@ -27,9 +27,14 @@ Memory is stored outside your project at `~/.config/opencode/memory/` so it does
 
 ## Install
 
-### npm (recommended)
+### npm / bun (recommended)
 
-Add to your OpenCode config (`~/.config/opencode/config.json` or project `opencode.json`):
+```bash
+bun add opencode-memd
+bun pm trust opencode-memd
+```
+
+Then add to your OpenCode config (`~/.config/opencode/config.json` or project `opencode.json`):
 
 ```json
 {
@@ -37,7 +42,7 @@ Add to your OpenCode config (`~/.config/opencode/config.json` or project `openco
 }
 ```
 
-Restart OpenCode. It auto-installs the package at startup, and the `postinstall` hook copies the memory tools to `~/.config/opencode/tools/` automatically.
+The `postinstall` hook copies memory tools to `~/.config/opencode/tools/` automatically. Bun blocks postinstall scripts by default — `bun pm trust` allows it to run.
 
 ### Git clone
 
@@ -106,7 +111,7 @@ All tools except `memory_search_all` accept a `scope` parameter: `"project"` (de
     │   ├── MEMORY.md              # Project index (loaded every session)
     │   ├── decisions.md           # Architecture decisions
     │   └── corrections.md         # Things the user corrected
-    └── f9e8d7c6-home-user-Projects-other/
+    └── f9e8d7c6-home-user-projects-other/
         └── MEMORY.md
 ```
 
