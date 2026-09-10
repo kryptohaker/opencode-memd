@@ -11,6 +11,7 @@
     "install-plugin": "bash install.sh",
     "postinstall": "node postinstall.mjs"
   },
+  "files": ["src/", "tools/", "install.sh", "postinstall.mjs"],
   "devDependencies": {
     "@types/node": "^22"
   }
