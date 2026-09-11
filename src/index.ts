@@ -12,6 +12,7 @@ import {
   memory_export,
   memory_import,
   memory_compact,
+  memory_status,
 } from "./tools/index.js"
 import { sessionCreated, sessionCompacting } from "./hooks/index.js"
 
@@ -33,6 +34,7 @@ export const memory: Plugin = async (ctx) => {
       memory_export,
       memory_import,
       memory_compact,
+      memory_status,
     },
 
     "session.created": () => sessionCreated(ctx.directory),

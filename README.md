@@ -99,6 +99,7 @@ bun remove opencode-memd
 | `memory_export` | Export memory to a JSON file for backup or transfer |
 | `memory_import` | Import memory from a JSON export file |
 | `memory_compact` | Scan for duplicates/overlap, deduplicate lines, or merge files |
+| `memory_status` | Health report: file counts, sizes, index usage, stale/duplicate alerts |
 
 All tools except `memory_search_all`, `memory_projects`, `memory_export`, and `memory_import` accept a `scope` parameter: `"project"` (default) or `"global"`.
 
@@ -246,7 +247,8 @@ opencode-memd/
 │   │   ├── memory_prune.ts
 │   │   ├── memory_export.ts
 │   │   ├── memory_import.ts
-│   │   └── memory_compact.ts
+│   │   ├── memory_compact.ts
+│   │   └── memory_status.ts
 │   └── hooks/
 │       ├── index.ts          # Barrel export
 │       └── session.ts        # Session hooks (context injection + compaction)

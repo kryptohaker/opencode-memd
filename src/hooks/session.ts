@@ -20,6 +20,7 @@ Available memory tools:
 - **memory_export** — export memory to a JSON file for backup or transfer
 - **memory_import** — import memory from a JSON export file
 - **memory_compact** — scan for duplicates/overlap, deduplicate lines, or merge files
+- **memory_status** — health report: file counts, sizes, index usage, stale/duplicate alerts
 
 Topic files support types and tags via YAML frontmatter:
 - **user** — role, preferences, knowledge (e.g. 'preferences.md')
