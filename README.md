@@ -34,16 +34,10 @@ Memory is stored at `~/.local/share/opencode-memd/` (respects `$XDG_DATA_HOME`) 
 ### From npm
 
 ```bash
-bun add opencode-memd
+opencode plugin opencode-memd --global
 ```
 
-Then add to your OpenCode config (`~/.config/opencode/opencode.jsonc` or project `.opencode/opencode.jsonc`):
-
-```jsonc
-{
-  "plugin": ["opencode-memd"]
-}
-```
+This installs the plugin and updates your OpenCode config automatically.
 
 ### From source
 
