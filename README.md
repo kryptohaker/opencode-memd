@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo.png" alt="opencode-memd" width="300">
+</p>
+
 # opencode-memd
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
