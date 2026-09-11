@@ -1,3 +1,25 @@
+# generic
 node_modules/
 *.tgz
 .DS_Store
+dist/
+*.log
+*.tsbuildinfo
+.env
+
+# lock files (library — not needed in repo)
+bun.lock
+package-lock.json
+
+# opencode
+.opencode/
+
+# claudecode
+.claude/settings.local.json
+.claude/sessions/
+.claude/todos/
+.claude/scheduled_tasks.*
+
+# personal
+CLAUDE.local.md
+MEMORY.md
