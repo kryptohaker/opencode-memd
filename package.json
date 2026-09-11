@@ -1,6 +1,6 @@
 {
   "name": "opencode-memd",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Persistent memory plugin for OpenCode — plain markdown, fuzzy search, auto-extraction, no vector DB",
   "type": "module",
   "main": "src/index.ts",
@@ -30,7 +30,10 @@
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
-  "files": ["src/", "uninstall.sh"],
+  "files": [
+    "src/",
+    "uninstall.sh"
+  ],
   "devDependencies": {
     "@types/node": "^22",
     "typescript": "^7.0.2"
